@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.gallery{
+    padding: .625rem;
+    max-width: 68.75rem;
+    margin: 0 auto;
+    background: #f2f2f2;
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 15.625rem;
+    grid-auto-flow: dense;
+}
+
+/*** stretch vertically ***/
+.v-strech{
+    grid-row: span 2;
+}   
+
+
+/*** stretch horizontally ***/
+.h-strech{
+    grid-column: span 2;
+}   
+
+
+/*** stretch both vertically and horizontally ***/
+.big-strech{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .3125rem;
+}
